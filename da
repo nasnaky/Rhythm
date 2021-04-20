@@ -1,0 +1,34 @@
+[33mcommit df332aa6dcaa95d5a15be04a88c5593d1d51d575[m[33m ([m[1;36mHEAD -> [m[1;32mNote_anime[m[33m)[m
+Merge: 1aabaac de4f01d
+Author: baegteun <baegteun@gmail.com>
+Date:   Mon Apr 19 23:36:35 2021 +0900
+
+    Merge remote-tracking branch 'origin/main' into Note_anime
+
+[33mcommit de4f01dcdb787a164a9511bf3766151b8d9af1c4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/Note_anime[m[33m)[m
+Author: baegteun <74440939+baekteun@users.noreply.github.com>
+Date:   Mon Apr 19 23:30:08 2021 +0900
+
+    Note_animation
+    
+    Add Note_animation and judgement
+
+[33mcommit 1aabaac48d9c7bd74d31fa90286ccd92a22c9e21[m
+Author: baegteun <baegteun@gmail.com>
+Date:   Mon Apr 19 23:24:24 2021 +0900
+
+    Note_animation
+
+[33mcommit 26efa0546d975794ca4068983dd7e181cca1204d[m
+Author: baegteun <74440939+baekteun@users.noreply.github.com>
+Date:   Mon Apr 19 19:19:04 2021 +0900
+
+    21-04-19
+    
+    So far the situation
+
+[33mcommit a747ddf5ad3d956ff52041799270bda6afbc5aad[m[33m ([m[1;32mmain[m[33m)[m
+Author: baegteun <baegteun@gmail.com>
+Date:   Fri Apr 16 13:08:07 2021 +0900
+
+    first commit
