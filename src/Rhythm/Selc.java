@@ -6,10 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Selc extends JFrame{
+    Music parfait = new Music("MintParfait.mp3",true);
+    Music stms=new Music("MintParfait.mp3",false);
 
 
-
-
+    JFrame frm = new JFrame();
     int dif = 0;
     int chn = 0;
     ImageIcon r1 = new ImageIcon(Selc.class.getResource("../img/right.png"));
@@ -29,12 +30,11 @@ public class Selc extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Rectangle r = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds();
         setLayout(new BorderLayout());
-        setSize(r.width,r.height+100);
-        setContentPane(new JLabel(new ImageIcon(Selc.class.getResource("../img/mint_parfait.png"))));
+        setContentPane(new JLabel(new ImageIcon(Selc.class.getResource("../img/maxresdefault.jpg"))));
         setUndecorated(true);
         setVisible(true);
 
-
+        setSize(r.width,r.height+100);
 
 
         right.setPressedIcon(r1);
@@ -83,30 +83,20 @@ public class Selc extends JFrame{
         add(start);
 
 
-        left.addActionListener(e -> {
-            if(chn==0) {
-                chn=1;
+        left.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(chn==0) chn=3;
+                else chn-=1;
 
             }
-            else {
-
-                chn-=1;
-            }
-
         });
 
         right.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(chn==1) {
-                    chn=0;
-
-                }
-                else {
-                    chn+=1;
-
-
-                }
+                if(chn==3) chn=0;
+                else chn+=1;
 
             }
         });
@@ -116,9 +106,10 @@ public class Selc extends JFrame{
         start.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                stms.start();
                 if(chn==0) {
                     MpSt mpst = new MpSt();
-
+                    Music parfait=new Music("MintParfait.mp3",true);
 
                 }
 
@@ -133,7 +124,7 @@ public class Selc extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-
+                if(chn==0) parfait.start();
             }
         });
 
