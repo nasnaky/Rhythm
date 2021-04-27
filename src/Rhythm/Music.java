@@ -1,5 +1,5 @@
 package Rhythm;
-import javazoom.jl.player.Player;
+import javazoom.jl.player   .Player;
 
 import java.io.BufferedInputStream;
 import java.io.File;
